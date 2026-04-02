@@ -138,6 +138,10 @@ if (!IS_TOUCH) {
     my = window.innerHeight / 2,
     rx = mx,
     ry = my;
+  cur.style.left = mx + 'px';
+cur.style.top = my + 'px';
+ring.style.left = rx + 'px';
+ring.style.top = ry + 'px';
   document.addEventListener('mousemove', function(e) { mx = e.clientX; my = e.clientY; });
   (function loop() {
     rx += (mx - rx) * 0.09; ry += (my - ry) * 0.09;
