@@ -333,11 +333,12 @@ footer {
   #cursor, #cursor-ring, #cursor-label { display:none !important; }
   body { cursor:auto; }
   #cover { height:100vh; min-height:560px; }
-  #cover-sketch {
-    object-fit:cover !important;
-    object-position:center 20% !important;
-    transform:none !important;
-    transition:none !important;
+ #cover-sketch {
+  object-fit:cover !important;
+  object-position:center 20% !important;
+  transform:none !important;
+  transition:none !important;
+  content: url("https://static.wixstatic.com/media/3e7de2_2903a0434bce430da3a936cc476efc9d~mv2.png");
   }
   #cover:hover #cover-sketch { transform:none !important; }
   #cover-lens { display:none !important; }
