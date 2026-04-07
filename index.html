@@ -305,7 +305,10 @@
 
   function showLogo() {
     brand.style.opacity = '1';
+    brand.style.visibility = 'visible';
   }
+
+  brand.style.visibility = 'hidden';
 
   if (coverSketch.complete) {
     showLogo();
@@ -317,7 +320,9 @@
 
   // Hide as soon as scrolling starts
   window.addEventListener('scroll', function() {
-    brand.style.opacity = window.scrollY > 10 ? '0' : '1';
+    var hide = window.scrollY > 10;
+    brand.style.opacity = hide ? '0' : '1';
+    brand.style.visibility = hide ? 'hidden' : 'visible';
   }, { passive: true });
 })();
 </script>
