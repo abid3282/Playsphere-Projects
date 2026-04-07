@@ -947,7 +947,8 @@ footer {
     animation: none !important;
     background: transparent !important;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
   }
   #cover-brand-img {
     height: 44px;
